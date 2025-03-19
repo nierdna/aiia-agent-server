@@ -201,7 +201,7 @@ export class PgvectorRepository implements OnApplicationBootstrap {
         
         if (!result.rows[0].exists) {
           console.log(`Table ${aiiaTableName} does not exist. Creating and embedding AIIA Finance documentation...`);
-          // await this.processAIIAFinanceDoc();
+          await this.processAIIAFinanceDoc();
         } else {
           console.log(`Table ${aiiaTableName} already exists. AIIA Finance documentation is ready.`);
         }
