@@ -1,0 +1,42 @@
+targetPort: 3000
+
+ingress:
+  enable: true
+  host: cs-agent-api.whales-market.site
+
+replicas: 1
+
+envFrom:
+  configMaps:
+    - name: cs-agent-api
+  secrets:
+    - name: cs-agent-postgres
+    - name: cs-agent-redis
+    - name: cs-agent-vectordb
+    - name: cs-agent-api
+
+resources:
+  requests:
+    cpu: '50m'
+    memory: '200Mi'
+  limits:
+    cpu: '200m'
+    memory: '400Mi'
+
+workers:
+  - name: cs-agent-worker
+    replicas: 1
+    envFrom:
+      configMaps:
+        - name: cs-agent-worker
+    resources:
+      requests:
+        cpu: '50m'
+        memory: '200Mi'
+      limits:
+        cpu: '200m'
+        memory: '400Mi'
+
+healthCheck:
+  enable: true
+  path: /health

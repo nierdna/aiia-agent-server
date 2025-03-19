@@ -1,0 +1,396 @@
+# Table of contents
+
+* [Introduction](README.md)
+
+## AIIA Platform
+
+* [Decentralized & Trustless Attributes](aiia-platform/quickstart.md)
+* [Transparency & Independent Audits](aiia-platform/publish-your-docs.md)
+* [PnL Index represents the Trading Fund's Performance](aiia-platform/publish-your-docs-1.md)
+* [Total Trading Value](aiia-platform/publish-your-docs-2.md)
+
+## AIIA Tokenomics & Fundamental Mechanism&#x20;
+
+* [AIIA Tokenomics](aiia-tokenomics-and-fundamental-mechanism/editor.md)
+* [The PnL Index](aiia-tokenomics-and-fundamental-mechanism/the-pnl-index.md)
+* [Investment Position Mechanism](aiia-tokenomics-and-fundamental-mechanism/markdown.md)
+* [Investment Mechanism Based on the PnL Index](aiia-tokenomics-and-fundamental-mechanism/interactive-blocks.md)
+* [Risk Management Mechanism](aiia-tokenomics-and-fundamental-mechanism/openapi.md)
+* [Economic Model & Benefits](aiia-tokenomics-and-fundamental-mechanism/images-and-media.md)
+* [NFT Dynamic](aiia-tokenomics-and-fundamental-mechanism/nft-dynamic.md)
+* [Multi-level Refferal](aiia-tokenomics-and-fundamental-mechanism/multi-level-refferal.md)
+* [Official Links](aiia-tokenomics-and-fundamental-mechanism/integrations.md)
+* [ROADMAP](aiia-tokenomics-and-fundamental-mechanism/integrations-1.md)
+* [Technical Infrastructure](aiia-tokenomics-and-fundamental-mechanism/integrations-2.md)
+
+---
+
+# Decentralized & Trustless Attributes
+
+AIIA Finance operates on DeFi protocols, a fundamental shift away from traditional finance models. This decentralized structure eliminates the reliance on a central authority or the need for absolute trust in a management team. Instead, the rules and logic governing the platform are encoded in smart contracts, self-executing agreements on the blockchain. This inherent transparency and automation minimize the risk of human error or manipulation, fostering greater trust among participants.
+
+---
+
+# Transparency & Independent Audits
+
+Transparency is a cornerstone of the AIIA Finance project. Financial data and the underlying smart contracts are subject to rigorous audits conducted by reputable, independent organizations. These audits serve a crucial purpose: they scrutinize the code for potential vulnerabilities and verify the accuracy of the financial data, significantly mitigating technical and financial risks. This commitment to independent verification enhances investor confidence and bolsters the overall security of the platform. Furthermore, data on the AIIA Finance platform is updated every hour, providing a near real-time view of the project's performance and ensuring ongoing transparency for all stakeholders.
+
+---
+
+# PnL Index represents the Trading Fund's Performance
+
+The AIIA Finance project utilizes a unique PnL (Profit and Loss) Index, which is directly tied 1:1 to an internal $100,000 trading fund managed by AIIA Finance. This direct correlation means that every fluctuation in the fund's performance is immediately and accurately reflected in the PnL Index. Specifically, each +1 point on the index corresponds to a +1% return calculated based on the $100,000 baseline. The total trading fund of AIIA Finance (with a trading limit of $10,000,000) follows the same portfolio distribution as the internal trading fund, thus achieving similar returns performance, and also reflected by the PnL Index. This PnL index serves as a crucial benchmark for investors, allowing them to easily calculate their potential gains or losses based on the project's quant-driven trading activities. By providing a clear and readily understandable metric, the PnL Index empowers investors to make informed decisions.
+
+---
+
+# Total Trading Value
+
+From the deposited positions, our platform implements the trading fund through a sophisticated AI-driven quantitative strategy, leveraging machine learning models and real-time data analysis to optimize trading decisions. The fund operates on a fully automated system, executing high-frequency trades across multiple asset classes to maximize returns while managing risk effectively. By integrating advanced risk management techniques such as dynamic portfolio rebalancing, maximum drawdown control, and statistical arbitrage, the platform ensures capital preservation and consistent performance. Additionally, the fund continuously evolves through backtesting and live performance monitoring, allowing adaptive improvements based on market conditions.
+
+To maintain sufficient liquidity and ensure the stability of the platform, the Trading Fund has a Total Trading Value Limit of $10,000,000. This cap prevents excessive trading volume that could potentially destabilize the system. The total trading volume status is regularly updated and made readily available to the community. When new investors deposit money to the AIIA Finance platform, the system transparently displays the remaining available contribution capacity, ensuring that the $10,000,000 limit is never exceeded. This mechanism provides a layer of protection for investors and contributes to the long-term health and sustainability of the AIIA Finance ecosystem. It ensures that there are always sufficient funds available for trading and prevents any single investor from dominating the platform.
+
+---
+
+# AIIA Tokenomics
+
+1.  **Supply and Distribution**
+
+    * Fixed Total Supply: The total supply of AIIA tokens is capped at 100 million. Crucially, there will be no further minting of AIIA tokens, creating scarcity and potentially increasing its value over time.
+    * Distribution Plan:
+      * Seed Sale:
+        * Percentage: 1.5% of the total supply (1.5 million tokens)
+        * Fixed Price: $0.006 per token
+        * Protection Mechanisms:
+          * Tokens sold are locked in a smart contract to ensure safety and transparency.
+          * If the fair launch price upon listing is below $0.006 per token, investors have the right to claim a refund.
+      * Founding Team: 18.5% of the total supply (18.5 million tokens)
+      * Marketing:
+        * Percentage: 5% of the total supply (5 million tokens)
+        * Objective: To implement an effective and responsible marketing strategy.
+      * Airdrop (Community Rewards)
+        * Percentage: 5% of the total supply (5 million tokens)
+        * Objective: To reward early community members, fostering participation and organic growth.
+      * Pre-Sale Fairlaunch
+        * Percentage: 50% of the total supply (50 million tokens)
+        * Details:
+          * Duration: 3 months
+          * Fundraising Mechanism:
+            * The public fundraising campaign requires a minimum weekly increase of 10% in funds raised.
+            * Example: If $100,000 is raised in one week, the following week must reach at least $110,000.
+            * If the weekly growth target is not met at any point, the fundraising phase will be terminated immediately, and the tokens will be listed on a decentralized exchange (DEX).
+          * Objective: To ensure fairness, stimulate momentum, and create a sense of FOMO (Fear Of Missing Out) in the market.
+      * Liquidity Provision
+        * Percentage: 20% of the total supply (20 million tokens)
+        * Objective: To provide stable liquidity upon the token's listing on a decentralized exchange (DEX), thereby minimizing price volatility.
+
+
+2.  **Supply Reduction Policy:**&#x20;
+
+    * A key feature of the AIIA tokenomics is the "Buy & Burn" mechanism, designed to reduce the circulating supply of AIIA tokens and potentially increase their value. Once the trading fund raises $2,000,000 and generates surplus profits, AIIA Finance will strategically use a portion of these earnings to buy back AIIA tokens from the market and permanently burn them. This process removes tokens from circulation, potentially increasing the scarcity and value of the remaining tokens. A portion of the fees collected when the PnL (Profit and Loss) is positive will also be used to buy back and burn AIIA tokens. This ties the token burn directly to the platform's profitability, further reinforcing the deflationary aspect.
+    * Transparency is paramount. All buy-back and burn transactions will be publicly disclosed, allowing the community to track the token supply and understand the impact of this mechanism on the token's price and intrinsic value.
+
+
+3. **Use of Raised Capital:**
+   * The funds raised through the token sale are strategically allocated to support the project's growth and stability:
+     * **Estimated Trading Account** ($10,000,000): This account serves as the core of the profit-generation engine, dedicated to executing quant-driven trading strategies. The capital allocated to this account fuels trading activities that drive the PnL Index and generate returns for investors through systematic and data-driven trading approaches.
+     * **Estimated Reserve Fund** ($4,000,000): A reserve fund is crucial for stabilizing the trading account and mitigating potential risks. This fund provides a buffer against market volatility and unforeseen circumstances, ensuring the continuity of trading operations.
+     * **On-chain Account**: This account serves as a fully liquid, on-chain reserve, ensuring that investor capital remains readily accessible at all times. Designed to provide maximum flexibility, it allows investors to withdraw their funds instantly without restrictions, offering a seamless and efficient transaction experience within the decentralized ecosystem.
+     * **Remaining Funds**: The remaining funds are allocated to essential areas such as marketing, legal compliance, infrastructure development, and team expansion. This includes hiring and retaining talented quant researchers and other key personnel necessary for the project's success. This allocation demonstrates a commitment to building a robust and sustainable platform.
+
+---
+
+# The PnL Index
+
+The PnL Index is derived directly from the performance of an internal trading fund, which has a fixed baseline of $100,000. The matching 1:1 mechanism means each point change in the PnL Index corresponds exactly to a 1% profit or loss calculated based on this fixed baseline amount of $100,000, rather than on the cumulative value of the fund.
+
+**Example:**
+
+* **Step 1 (Initial):**\
+  The PNL Index starts at 100, corresponding to the initial baseline value of $100,000 for the internal fund.
+* **Step 2 (When the fund gains profit):**\
+  After some periods, the fund achieves a profit of $12,000, equivalent to 12% based on the original baseline of $100,000.\
+  → The PnL Index thus increases by exactly 12 points, from 100 to **112**.
+* S**tep 3 (When the fund incurs a loss):**\
+  Suppose after this profitable period, the fund experiences a loss of $7,000, equivalent to 7%, still calculated against the original baseline of $100,000.\
+  → The PnL Index then decreases by exactly 7 points, from 112 down to **105**.
+
+In this way, the PNL Index always moves in direct proportion to percentage gains or losses based on the fixed $100,000 baseline. This transparent mechanism allows investors to easily monitor and calculate the fund's real-time performance and clearly understand their investment outcomes.
+
+---
+
+# Investment Position Mechanism
+
+1. **Definition and Function:**
+   * The investment position serves as the mechanism through which investors contribute capital to the AIIA Finance trading pool. Essentially, depositing USDT to the pool is equivalent to opening an investment position. Each position represents a proportionate share of the total trading capital. For example, if the total trading capital is $1,000,000 and an investor deposits 10,000 USD, they own 1% of the fund.
+2. **Preferred Policies When Investing with AIIA:**
+   * AIIA Finance offers several incentivized options for investors who choose to stake AIIA tokens or lock their investment positions:
+     * Investors Already Staking X AIIA: Investors who are already staking a certain amount of AIIA are eligible for the discounted profit-sharing fee (20-80). This rewards existing AIIA stakers and encourages continued participation in the ecosystem.
+     * Rewards for Locked Investments: In addition to the profit-sharing benefits, investors who lock their investment positions (locked for 3, 6, or 12 months) earn an APY (Annual Percentage Yield) reward. This provides an additional incentive for maintaining their investment and participating in the platform's growth. The staking rewards offer a passive income stream for long-term investors.
+
+---
+
+# Investment Mechanism Based on the PnL Index
+
+1. #### Investment Mechanism:
+
+* **Depositing USDT**: Investors participate by depositing USDT to the AIIA Finance platform. As explained previously, this purchase represents an investment in the underlying trading fund.
+* **PnL Index Updates**: The PnL (Profit and Loss) Index is updated every 4 hours, providing a regular snapshot of the fund's performance. This index reflects realized gains or losses from the trading activities. It's crucial to understand that the PnL Index reflects actual trading outcomes, not just paper profits.
+* **Profit/Loss Calculation**: When the PnL Index changes, the investor's profit/loss is calculated by multiplying the difference between the PnL Index at the time of purchase and at the time of sale by the amount of investment for every position they are holding.
+
+2. #### Staking Interest
+
+AIIA Finance offers a staking program for AIIA token holders. By staking AIIA, investors can earn an annual interest rate of 5%. The minimum lock-up period for staked AIIA is 3 months. This staking mechanism provides a passive income stream for AIIA holders and incentivizes long-term holding of the token.
+
+3. #### PnL Fund Size and Profit Sharing
+
+* **Flexible Trading Capital**: The PnL fund now operates with a flexible trading capital model that adjusts according to the total capital contributed by investors. While the trading capital expands or contracts based on investor contributions, it adheres to a strict maximum cap of $10,000,000, as established by AIIA Finance's Portfolio Management standards. This adaptive framework ensures that capital allocation is directly aligned with the actual assets under management, enabling the fund to seize trading opportunities and manage risk effectively. Should the total investor capital fall short, AIIA Finance can promptly reallocate resources or inject additional funds to maintain seamless trading operations, ensuring continuous trading operations within a controlled, yet highly adaptive environment.
+* **Profit Sharing:** The sharing of profits between investors and the platform depends on the method by which they deposit.
+  * **Standard Profit Sharing**: If no preferred policy is applied when depositing, the profit is divided as follows: 75% for investors and 25% for the platform.
+  * **Preferred Policy Profit Sharing**: If an investor utilizes one of the preferred purchase policies (e.g., stake a required level of AIIA to qualify), the profit split is more favorable: 80% for investors and 20% for the platform. This incentivizes the use of AIIA within the ecosystem and rewards active participation.
+* **Platform's Share**: The portion of the profits allocated to the platform is used strategically. A portion covers the operational costs of AIIA Finance, including staff salaries, infrastructure maintenance, and other expenses. The remaining portion is then allocated to the buy-back and burn mechanism for AIIA tokens. This reinforces the deflationary nature of the AIIA token and potentially increases its value over time, benefiting all AIIA holders. This system creates a sustainable cycle where platform profitability directly contributes to token scarcity and potential value appreciation.
+
+4. #### Example Scenario:
+
+Imagine an investor who decides to invest in AIIA Finance. He or she deposits $10,000 when the PnL Index is at 120. The investor also chooses to lock in their position for one year, earning a 5% annual interest rate. One year later, the PnL Index has risen to 200, indicating a significant positive performance by the trading fund.&#x20;
+
+**Profit Calculation:**
+
+1. **PnL Gain**: The investor's gain from the PnL Index increase is calculated as follows:\
+   (200 - 120) / 100 \* $10,000 = $8,000
+2. **Staking Interest**: The investor also earns staking interest on their initial investment:\
+   5% \* $10,000 = $500
+3. **Profit Sharing**: Let's assume the investor qualified for the 80% profit-sharing benefit. The final profit after profit sharing is:\
+   80% \* 8,000 + $500  = $6,900
+
+**Return on Investment (ROI):**
+
+The investor's final ROI is calculated as:
+
+($6,900 / $10,000) \* 100% = 69%
+
+---
+
+# Risk Management Mechanism
+
+1. **Maximum Drawdown 24%**&#x20;
+
+AIIA Finance places the highest priority on risk management by setting a clearly defined Maximum Drawdown (MaxDD) threshold, measured directly in points of the PnL Index. Specifically, this threshold is set at 24 points. This means if the PnL Index decreases by exactly or more than 24 points from its highest peak, the fund immediately activates special risk mitigation measures designed to protect investor capital and prevent further potential losses. This means that an investor's maximum loss is capped at 24% (since 1 point is equivalent to 1% profit/loss in the trading return)
+
+When the fund reaches the maximum drawdown of 24 points from the highest peak of the PnL index, the following actions are taken:
+
+* I**mmediate Investor Notification:** As soon as the PnL Index reaches a drawdown of 24 points from its previous peak, investors are immediately notified of the situation. Transparency ensures investors remain fully informed of the fund's status.
+* **Transition to Paper Trading**: Paper Trading refers to simulated trading activities conducted under real market conditions, but utilizing virtual money instead of actual investor capital. The detailed Paper Trading process includes:
+  * Activation: Paper Trading is activated immediately when the PnL Index experiences a decline of exactly or more than 24 points from its peak.
+  * During this period, the fund management team will:
+    * Suspend all real-money trading to prevent further actual capital loss.
+    * Evaluate current trading strategies comprehensively.
+    * Test and refine new strategies within a safe, risk-free environment.
+    * Run the Paper Trading PnL Index concurrently and compare with the real PnL Index.
+  * Duration: Paper Trading lasts for a maximum period of one month or until the fund fully recovers the drawdown (confirmed when the paper simulated PnL Index surpasses its previous peak), whichever comes first.
+  * Criteria for Drawdown Recovery: Drawdown recovery is confirmed only when the paper simulated PnL Index during Paper Trading achieves a new high, surpassing the previous peak before the drawdown occurred. This ensures recovery is genuine, stable, and sustainable rather than temporary.
+* **Investor Options After Paper Trading**: Once the Paper Trading period ends (after full recovery or the expiration of one month), investors are provided with two clear choices:
+  * Exit the Fund: Investors may choose to withdraw all or part of their investment, with profits or losses calculated based on the current PnL Index at the time of withdrawal.
+  * Continue Investing: Investors who decide to stay in the fund will see their ownership proportions recalculated based on the remaining capital after withdrawals by other investors. The fund will then resume live trading operations.
+
+**Example:**&#x20;
+
+**Step 1 (Initial):**\
+Suppose the initial PnL Index is 100 points. After some periods, the fund performs well, and the PnL Index rises to a new peak of 120 points.
+
+**Step 2 (Drawdown Occurs):**\
+Subsequently, market conditions lead to a sharp decline, and the PnL Index falls from 120 points to exactly 96 points, representing a decline of 24 points. At this moment, the MaxDD threshold is reached, triggering immediate risk management measures:
+
+* Investors are instantly notified of the drawdown.
+* The fund immediately suspends all real-money trading and switches to Paper Trading.
+
+**Step 3 (Paper Trading Activated):**\
+During the simulated trading period (Paper Trading), the management team adjusts strategies, resulting in the simulated PnL Index recovering from 96 points to a new peak of 121 points, exceeding the previous peak (120 points). Meanwhile, the real PnL Index still remains at 96 points due to the suspension of real-money trading. At this point, the fund officially confirms a full drawdown recovery.
+
+**Step 4 (Investor Decision Post-Recovery):**\
+Investors are informed of the successful recovery and presented with the following choices:
+
+* Withdraw: Investors can withdraw partially or fully at the current index level of 96 points.
+* Continue Investing: Investors choosing to remain in the fund continue with adjusted proportions, calculated based on the remaining capital after others exit, as the fund resumes live trading.
+
+2. **Reserve Fund Mechanism For Liquidity Risk Mitigation**&#x20;
+
+To safeguard liquidity in times of large capital withdrawals, AIIA Finance employs a Reserve Fund which acts as a backup system that supports both trading operations and user withdrawals.
+
+* When trading loses too much money, the Trading Fund may run low on capital. The Reserve Fund steps in by providing extra funds to keep trading going and prevent major disruptions.
+* When a lot of users withdraw at the same time, the platform may not have enough money immediately available. In this case, the Reserve Fund sends liquidity to ensure users can withdraw their funds smoothly.
+* Over time, as trading generates profits, some of those profits are sent back to the Reserve Fund, replenishing it so it can continue providing support in the future.
+
+This cycle keeps the system balanced—helping during tough times and refilling when things are going well.
+
+---
+
+# Economic Model & Benefits
+
+The AIIA Finance economic model is designed to create a mutually beneficial relationship between investors, AIIA token holders, and the overall ecosystem. Here's a breakdown:
+
+1. **For Investors:**
+   * Privileged Purchase Options: Investors enjoy preferential terms when depositing while staking AIIA tokens. Investors maintain X AIIA staking amount enjoy discounted profit sharing fee, increasing returns.
+   * Staking Rewards: Locking in the investment position (for 3, 6, or 12 months) earns APY rewards, creating a passive income stream and incentivizing long-term holding.
+   * Indirect Benefit from AIIA Price Appreciation: Even though the investment position is fixed in size, investors can still indirectly benefit from any increase in the price of the AIIA token. If the value of the staked AIIA portion (in the 95-5 method) increases, the holder's overall investment also appreciates.
+2. **For AIIA Token Holders:**
+   * Deflationary Supply: The buy-and-burn mechanism, driven by fund profits and fees, reduces the circulating supply of AIIA tokens over time. This scarcity can potentially increase the value of the remaining tokens.
+   * Indirect Benefit from Ecosystem Growth: As the AIIA Finance platform grows and the trading fund performs well, the demand for AIIA tokens is likely to increase, further supporting its value.
+3. **For the Ecosystem:**
+   * Capital Flow Supports AIIA: The inflow of capital into the trading fund supports the AIIA token in several ways. The funds raised provide liquidity for the trading activities, and a portion of the profits and fees are used to buy and burn AIIA tokens.
+   * Increased Liquidity and Confidence: The active trading and the buy-and-burn mechanism contribute to increased liquidity for the AIIA token. Furthermore, the transparent operation of the platform and the successful execution of the trading strategies build confidence in both the token and the platform as a whole.
+   * Sustainable Growth: The economic model is designed for sustainable growth. The success of the trading fund fuels the buy-and-burn mechanism, which in turn benefits AIIA token holders. This creates a positive feedback loop that encourages participation and investment in the AIIA Finance ecosystem
+
+---
+
+# NFT Dynamic
+
+NFT Dynamic by AIIA Finance is an innovative investment solution that combines digitized deposit certificates with a multi-level referral system, providing investors with the opportunity to grow their assets from a small initial capital. With an attractive 2% monthly interest rate, compounded twice a year, and transparent transactions on the blockchain, NFT Dynamic promises a flexible, sustainable future of investment
+
+1. **Key Features**
+
+**A. Digitized Deposit Certificates**
+
+* Investment amount: 2 USD/NFT.
+* Interest rate: 2% per month.
+* Compound interest: Automatically compounds twice a year, allowing principal to grow over time.
+
+**B. VIP Card Benefits**
+
+* Higher interest rates.
+* Exclusive access to special investment events.
+* Reduced fees for advanced investment packages.
+
+**C. Safety Policy**
+
+* NFTs must be held for at least 1 year to receive the full benefits of the investment.
+
+**D. Trading and Transfer**
+
+* NFTs can be traded on OpenSea.
+* New owners inherit all accompanying NFT benefits.
+
+**E. Transparency**
+
+* All transactions are stored on the blockchain, ensuring clarity and openness.
+
+2. **The Power of Compound Interest**
+
+Example: A user invests in 10 NFTs (20 USD) and holds them for a very long time.
+
+| Duration | Estimated Value                    |
+| -------- | ---------------------------------- |
+| 30 years | \~18,000 USD (Education fund)      |
+| 40 years | \~173,000 USD (Insurance fund)     |
+| 50 years | \~1,670,000 USD (Legacy for heirs) |
+
+With compound interest, even a small amount can grow into a significant asset over time.
+
+3. **NFT Holder Flow of Actions:**
+
+* **Purchase NFT**: A pays 2 USD, and the system automatically creates the NFT.
+* **Hold and stake**: The owner earns interest and VIP benefits.
+* **Receive referral reward**: 0.2 USD is divided under the **R1 - R2** model.
+* **Trade**: The NFT can be sold/transferred on **OpenSea**, and the new owner continues to enjoy its benefits.
+* **Withdraw**: The NFT can be withdrawn by selling back directly to the platform. The value withdrawn will be the same as the compounded value of the NFT.
+
+---
+
+# Multi-level Refferal
+
+This referral system is designed to encourage investors to expand their network:
+
+* Each participant receives a 6-character referral code.
+* When someone purchases an NFT, the platform will keep 90% and the remaining 10% (0.2 USD) is distributed as follows:
+
+| _**Recipient**_         | _**Commission Rate**_ | _**Amount**_ | _**Note**_                 |
+| ----------------------- | --------------------- | ------------ | -------------------------- |
+| Platform                | 90%                   | 1.8 USD      | Used to create the NFT     |
+| R1 (direct referrer)    | 9%                    | 0.18 USD     | Person who directly refers |
+| R2 (the referrer of R1) | 1%                    | 0.02 USD     | The referrer of R1         |
+| Total                   | 100%                  | 2 USD        |                            |
+
+Note:
+
+* If there is only R1, R1 receives 0.18 USD; if there is no R2, the 0.02 USD portion is not further distributed.
+* NFT bought directly from the AIIA platform: the remaining commission of 0.2 USD (10%) per NFT purchase goes back to the platform.
+
+Airdrop Bonus for R1: In addition to a 9% commission (0.16 USD) from each NFT purchased by an invitee, R1 (the direct inviter) will also receive free AIIA tokens in the form of an airdrop. The number of bonus tokens is based on the total number of NFTs purchased by all of R1's invitees:
+
+* This bonus is accumulated from the total number of NFTs of all invitees.
+* Condition: The total number of NFTs purchased by all invitees must reach at least 50 NFTs for R1 to receive the airdrop.
+
+**How It Works**
+
+1. Person C invites B to join, providing a referral code.
+2. B uses C's code to join and then invites A to purchase an NFT.
+3. A buys an NFT for 2 USD:
+
+* 1.8 USD goes to the platform to create the NFT.
+* B (R1) receives 0.18 USD (9%) for referring A.
+* C (R2) receives 0.02 USD (1%) for referring B.
+
+---
+
+# Official Links
+
+1. Website: [https://aiia.finance/ ](https://aiia.finance/)
+2. Discord: [https://discord.com/invite/aiiafinance ](https://discord.com/invite/aiiafinance)
+3. X: [https://x.com/aiia\_finance ](https://x.com/aiia_finance)
+4. Telegram Channel: [https://t.me/aiiafinance](https://t.me/aiiafinance)
+5. Docs: [https://docs.aiia.finance/](https://docs.aiia.finance/)
+6. Linktree: [https://linktr.ee/AIIAFINANCE](https://linktr.ee/AIIAFINANCE)
+7. DApp: [https://app.aiia.finance/](https://app.aiia.finance/)
+
+---
+
+# ROADMAP
+
+1. **Round 1 (Launchpad) – March 2025 (50 Million AIIA, 50%)**
+
+* Finalize the maximum drawdown (maxDD) scenario and complete the final phase of AI–Quant testing.
+
+2. **Round 2 (DEX) – June 2025 (20% for Liquidity Provision)**
+
+* Enhance marketing strategies to strengthen brand presence and increase market visibility.
+
+3. **Round 3 (CEX) - August 2025**
+
+* List AIIA on multiple major centralized exchanges, further expanding global market reach and deepening overall liquidity. Continue strategic marketing campaigns to boost brand awareness, attract new user segments, and forge partnerships that drive long-term adoption and ecosystem growth.
+
+4. **Post–Round 3**
+
+* Prioritize international market expansion and explore new product offerings, such as Repo AIIA, margin trading, and NFT memberships.
+* Maintain a structured buyback and burn program on a regular (monthly or quarterly) schedule.
+
+5. **Roadmap Risks & Mitigation Strategies:**
+
+* Regulatory Compliance: Ongoing monitoring of DeFi regulatory changes with contingency funds allocated for legal advisory services.
+* Technical Risks: Redundant HPC infrastructure, extensive testnet-to-mainnet validation, and CertiK audits mitigate security and performance risks.
+* Project Delays: Transparency commitment ensures public updates in case of delays, with DAO-based governance enabling community voting on necessary changes.
+
+6. **Roadmap Risks & Mitigation Strategies:**
+
+* Regulatory Compliance: Ongoing monitoring of DeFi regulatory changes with contingency funds allocated for legal advisory services.
+* Technical Risks: Redundant HPC infrastructure, extensive testnet-to-mainnet validation, and CertiK audits mitigate security and performance risks.
+* Project Delays: Transparency commitment ensures public updates in case of delays, with DAO-based governance enabling community voting on necessary changes.
+
+---
+
+# Technical Infrastructure
+
+1. **Blockchain Base:**
+
+* High Performance & Low Fees: AIIA Finance operates on Base (Layer-2, OP Stack), benefiting from Ethereum's security while ensuring high transaction throughput and low gas fees.
+* Smart Contract Audits: All smart contracts undergo security audits by a reputable third-party auditor before mainnet deployment, with annual periodic audits to maintain robust security standards.
+
+2. **AI-Powered Data Infrastructure:**
+
+* Market Analysis AI: AIIA Finance leverages AI to continuously analyze market data (both on-chain and off-chain), utilizing real-time data training to predict trends, arbitrage opportunities, and market inefficiencies.
+* Data Synchronization System: High-performance computing (HPC) infrastructure from AWS and Google Cloud ensures real-time processing, achieving a 99.99% uptime rate with DDoS protection.
+
+3. **Quantitative Trading & Alpha Strategies:**
+
+* Quantitative Strategy Development: The trading strategies rely on statistical analysis, big data processing, and AI-driven pattern recognition to optimize market opportunities.
+* Market-Neutral & Arbitrage Strategies: The primary trading focus is on market-neutral and arbitrage strategies, which enhance returns while maintaining controlled risk exposure.
+* Rapid Adaptability: Backtesting and strategy updates occur continuously to sustain competitive advantages.
+* Expert Trading Team: The AIIA Finance team comprises seasoned professionals from Wall Street, including financial analysts, algorithm engineers, and experienced portfolio managers.

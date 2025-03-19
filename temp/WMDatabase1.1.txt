@@ -1,0 +1,235 @@
+﻿1. Project Overview
+* Name: Whales Market
+* Type: Decentralized OTC DEX
+* Description: Whales Market is the ultimate OTC decentralized exchange for trading pre-listing allocations. It allows users to directly exchange assets across multiple blockchains with complete trustlessness and security.
+* Core Mission: To mitigate risks in peer-to-peer cryptocurrency trading by consolidating OTC transactions onto a secure platform. Smart contracts lock funds, releasing them only upon successful transaction settlement to prevent scams and fraud.
+* Unique Selling Point: Enables users to trade airdrop allocations even before claiming them.
+2. Supported Blockchains
+* Primary Token Blockchain: Solana
+* Supported Networks:
+   * Solana, Ethereum, Arbitrum, BNB Chain, Optimism, zkSync, Merlin Chain, Blast, Base, Linea, Mode, Scroll, Taiko, Starknet.
+3. Tokenomics
+* Ticker: $WHALES
+* Total Supply: 100,000,000 tokens
+* Blockchain: Solana
+* Mint Address: GTH3wG3NErjwcf7VGCoXEXkgXSHvYhx5gtATeeM5JAS1
+* Token Allocation:
+   1. Incentives: 65% (65,000,000 tokens) - Linear emissions over 4 years, DAO-governed.
+   2. Team: 9.5% (9,500,000 tokens) - 0% TGE, locked for 9 months, linear vesting for 36 months.
+   3. Liquidity: 7.5% (7,500,000 tokens) - 5% burned on TGE, 2.5% reserved for CEX listing.
+   4. Private Sale: 7% (7,000,000 tokens) - 50% TGE, linear vesting for 2 months.
+   5. Airdrop: 5% (5,000,000 tokens) - 50% TGE, linear vesting for 12 months.
+   6. Marketing: 5% (5,000,000 tokens) - 20% TGE, linear vesting for 24 months.
+   7. Security: 1% (1,000,000 tokens) - 100% TGE.
+
+
+4. Token Utility
+Platform fees collected are converted into $WHALES and utilized as follows:
+1. Revenue-sharing: 60% of fees are redistributed to $WHALES stakers.
+2. Development Expenses: 20% allocated to ongoing platform development.
+3. Buyback and Burn: 10% used to repurchase and burn $WHALES, reducing circulating supply.
+4. $LOOT Revenue-sharing: 10% shared with $LOOT stakers and $xLOOT holders.
+
+
+5. Staking
+Overview:
+* Stake $WHALES to earn revenue generated from OTC market fees (60% distributed to stakers).
+* Staking rewards are issued in $xWHALES, which serves two functions:
+   1. Receive revenue share.
+   2. Use as collateral in OTC markets.
+Mechanics:
+* Fees collected in various assets are converted to $WHALES and distributed.
+* Dual-Asset Pool: Includes $WHALES and $xWHALES tokens.
+* Rewards are paid incrementally to avoid post-claim dumping.
+* Stakers can withdraw $xWHALES and convert it back to $WHALES anytime.
+Withdrawal:
+* No official liquidity pool for $xWHALES on Solana DEX; conversion guaranteed only via Whales staking.
+* Rewards do not inflate supply as $WHALES are purchased from the open market.
+5. Airdrop and Historical Context
+* Airdrop Program:
+   * A percentage of $WHALES is retrospectively airdropped to $LOOT stakers and $xLOOT holders upon launch to ensure fair distribution.
+* LootBot Context:
+   * LootBot was the first project by the Whales Market team, achieving success in 2022.
+   * The $WHALES token TGE occurred 11 months and 11 days ago.
+6. Features
+1. Pre-Markets: Trade token allocations before official Token Generation Events (TGEs).
+2. Point Markets: Trade project points convertible to allocations upon TGE.
+7. Using Whales Market Platform
+About Pre-Markets
+* What is Pre-Market?
+   * Pre-Market is the decentralized platform for trading Pre-TGE tokens or Airdrop Allocations in a secure P2P manner.
+* How it Works:
+   * Buyers deposit funds, and sellers deposit tokens or assets into smart contracts.
+   * Transactions are smoothly settled within the smart contract, ensuring trustless and secure trading.
+________________
+
+
+About Point Markets
+* What is Point Market?
+   * A marketplace where users trade protocol points in exchange for tokens once they are converted post-TGE.
+* How it Works:
+   * Buyers purchase protocol points, and sellers provide the points as collateral. After TGE, points are automatically converted to tokens by the platform.
+________________
+
+
+Steps to Use Pre-Market
+Buying Token Allocation
+1. Fill an Offer-to-Sell:
+   * Browse offers listed by sellers.
+   * Choose a price and make a deposit.
+   * Deposited funds are held in a smart contract until the settlement is finalized.
+2. Create an Offer-to-Buy:
+   * Set your own price and quantity terms.
+   * Submit collateral as a buyer.
+   * Your offer remains active until filled or manually closed.
+________________
+
+
+Selling Token Allocation
+1. Fill an Offer-to-Buy:
+   * Find buy offers with suitable prices.
+   * Deposit collateral to guarantee the token allocation delivery.
+   * The smart contract secures collateral until tokens are delivered post-TGE.
+2. Create an Offer-to-Sell:
+   * Define your own price and terms for selling tokens.
+   * Submit collateral to list your sell offer.
+   * Offers can be partially or fully filled by buyers.
+________________
+
+
+Steps to Use Point Market
+Buying Protocol Points
+1. Fill an Offer-to-Sell:
+   * Locate an offer with a suitable price.
+   * Deposit funds into the smart contract.
+   * Once TGE occurs, points convert to tokens as announced by the project.
+2. Create an Offer-to-Buy:
+   * Set custom terms for buying points.
+   * Deposit funds, and wait for sellers to fill your offer.
+________________
+
+
+Selling Protocol Points
+1. Fill an Offer-to-Buy:
+   * Deposit collateral to guarantee token delivery post-conversion.
+   * Once points are converted into tokens, finalize and settle the offer.
+2. Create an Offer-to-Sell:
+   * Define your selling terms, including price and quantity.
+   * Submit collateral to secure your listing.
+________________
+
+
+Settlement Rules
+General Rules
+* Once tokens are released by the foundation, the settlement deadline begins, lasting 24 hours from the TGE time.
+* During the settlement phase:
+   * Sellers must transfer tokens to buyers to settle orders.
+   * Buyers must claim their tokens.
+For Sellers
+1. Responsibilities:
+   * Sellers must settle their orders before the settlement deadline.
+   * Failure to settle on time will result in the loss of their collateral, which will be transferred to the buyer as compensation.
+2. Settlement Process:
+   * Tokens equivalent to the buyer’s deposit must be transferred.
+   * Once settled, the seller’s collateral will be returned, and the funds from the buyer will be released to the seller.
+3. If Sellers Fail to Settle:
+   * Buyers can cancel the order after the deadline.
+   * The buyer’s deposited funds are refunded, and the seller’s collateral is forfeit as compensation to the buyer.
+________________
+
+
+For Buyers
+1. Responsibilities:
+   * Buyers must wait for the TGE to receive their tokens from the seller.
+   * If sellers fail to settle, buyers can initiate a cancel order to claim compensation.
+2. Compensation in Case of Seller Default:
+   * If the seller is overdue after the settlement deadline, buyers are entitled to:
+      * A full refund of their deposit.
+      * Compensation taken from the seller’s collateral.
+________________
+
+
+Points Market-Specific Rules
+1. Conversion Rate Requirement:
+   * The Points Market settlement depends on the project team announcing the points-to-token conversion rate.
+2. Special Case - No Conversion Rate:
+   * If the team fails to define the conversion rate:
+      * The listing will be canceled.
+      * All deposits and collateral will be fully refunded to participants.
+      * No fees will be charged for the cancellation.
+3. Automatic Conversion:
+   * After the token is released, the platform will convert points into tokens automatically based on the announced rate.
+________________
+
+
+Settlement Flow
+1. If Seller Settles the Order:
+   * Tokens are distributed to the buyer.
+   * Buyer’s deposit is transferred to the seller.
+   * Seller’s collateral is returned.
+2. If Seller Disappears or Defaults:
+   * Order is canceled by the buyer after the deadline.
+   * Buyer’s deposit is refunded.
+   * Seller’s collateral is transferred to the buyer as compensation.
+________________
+
+
+Additional Notes
+* Settlement deadlines may be extended in rare cases of technical issues (e.g., network congestion or exchange listing delays).
+* Listings failing to reach a $50,000 trading volume within 24 hours of the settlement phase will be canceled, and all funds will be refunded.
+* Sellers and Buyers must wait for TGE to begin settlement or cancel orders.
+________________
+
+
+Platform Fees
+1. Closing an Offer:
+   * A 0.5% fee is deducted when reclaiming collateral or deposits for the unfilled portions of an offer.
+2. Settling an Order:
+   * A 2.5% fee applies to the settlement amount when finalizing trades.
+3. Buying Points or Tokens:
+   * A 2.5% platform fee is charged on the total amount of tokens or points purchased.
+4. Canceling an Order:
+   * If the seller defaults, a 2.5% fee is deducted from both the buyer's deposited funds and the seller's collateral.
+   * ________________
+
+
+FAQs
+* What happens if nobody fills my order?
+   * Unfilled orders can be closed manually from the dashboard, and deposits/collateral will be reclaimed.
+* Do I need to provide private keys to buyers?
+   * No, Whales Market operates with secure smart contracts, and private keys are never shared.
+* I filled a buy offer but haven’t received tokens yet. What should I do?
+   * You must wait until the Token Generation Event (TGE) for tokens to be distributed.
+8. Official Links
+
+
+Website: https://whales.market/
+Dapp: https://pro.whales.market/
+Twitter: https://twitter.com/WhalesMarket
+Discord: https://discord.com/invite/whalesmarket
+Telegram: https://t.me/verifyWhalesmarket
+Dune: https://dune.com/whalesmarket/whales-market-solana
+YouTube: https://www.youtube.com/@LootBotxWhalesMarket
+
+
+
+
+
+
+9. Official Platform Contract Address
+
+
+* Solana: https://solscan.io/account/GDsMbTq82sYcxPRLdQ9RHL9ZLY3HNVpXjXtCnyxpb2rQ
+* Ethereum: https://etherscan.io/address/0x1ecdb32e59e948c010a189a0798c674a2d0c6603
+* Arbitrum: https://arbiscan.io/address/0x7a560269480ef38b885526c8bbecdc4686d8bf7a
+* BNB Chain: https://bscscan.com/address/0x7a560269480ef38b885526c8bbecdc4686d8bf7a
+* Optimism: https://optimistic.etherscan.io/address/0xe3b7427c799353cfadddc1549967263952f17bd3
+* zkSync: https://era.zksync.network/address/0xe6c5f63623a2ae769dd3d505bc44d7eb21dd974b
+* Merlin Chain: https://scan.merlinchain.io/address/0x7a560269480Ef38B885526C8bBecdc4686d8bF7A
+* Blast: https://blastscan.io/address/0x7a560269480ef38b885526c8bbecdc4686d8bf7a
+* Base: https://basescan.org/address/0xdf02eeab3cdf6efe6b7cf2eb3a354dca92a23092
+* Linea: https://lineascan.build/address/0x7a560269480ef38b885526c8bbecdc4686d8bf7a
+* Mode: https://modescan.io/address/0x7a560269480Ef38B885526C8bBecdc4686d8bF7A
+* Scroll: https://scrollscan.com/address/0x7a560269480ef38b885526c8bbecdc4686d8bf7a
+* Taiko: https://taikoscan.io/address/0x7a560269480ef38b885526c8bbecdc4686d8bf7a
+* Starknet: https://starkscan.co/contract/0x04427a62f43314c0f1b171358235c04598dbc702c61a891fa1fb0cc52936cfff

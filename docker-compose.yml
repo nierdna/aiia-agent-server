@@ -1,0 +1,90 @@
+version: "3.8"
+services:
+  # app:
+  #   image: node:18-alpine
+  #   container_name: cs-agent-server-dev
+  #   working_dir: /usr/src/app
+  #   volumes:
+  #     - .:/usr/src/app
+  #     - /usr/src/app/node_modules
+  #   command: >
+  #     sh -c "npm install -g @nestjs/cli &&
+  #            npm install &&
+  #            npm run start:dev"
+  #   restart: unless-stopped
+  #   tty: true
+  #   env_file:
+  #     - .env
+  #   ports:
+  #     - "8022:3000"
+  #   depends_on:
+  #     database:
+  #       condition: service_healthy
+  #     # milvus:
+  #     #   condition: service_started
+  #   networks:
+  #     - cs-agent-server-network
+
+  # database:
+  #   container_name: cs-agent-database
+  #   image: postgres:14.1
+  #   restart: unless-stopped
+  #   volumes:
+  #     - cs-agent-database:/var/lib/postgresql/data
+  #   environment:
+  #     POSTGRES_USER: root
+  #     POSTGRES_PASSWORD: 123456
+  #     POSTGRES_DB: cs_agent_backend
+  #   ports:
+  #     - "5432:5432"
+  #   networks:
+  #     - cs-agent-server-network
+  #   healthcheck:
+  #     test: ["CMD-SHELL", "pg_isready -U root -d cs_agent_backend"]
+  #     interval: 10s
+  #     timeout: 5s
+  #     retries: 5
+
+  # redis:
+  #   container_name: cs-agent-redis
+  #   image: redis
+  #   restart: unless-stopped
+  #   ports:
+  #     - "6379:6379"
+  #   command: redis-server --save 20 1 --loglevel warning
+  #   networks:
+  #     - cs-agent-server-network
+  #   volumes:
+  #     - cs-agent-redis:/data
+
+  vector_db:
+    container_name: cs-agent-vector-db
+    image: pgvector/pgvector:pg16
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: cs_agent_vector_db
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: 123456
+    ports:
+      - "5433:5432"
+    volumes:
+      - cs-agent-vector-db:/var/lib/postgresql/data
+    networks:
+      - cs-agent-server-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U root -d cs_agent_vector_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+networks:
+  cs-agent-server-network:
+    driver: bridge
+
+volumes:
+  cs-agent-database:
+    driver: local
+  cs-agent-redis:
+    driver: local
+  cs-agent-vector-db:
+    driver: local
