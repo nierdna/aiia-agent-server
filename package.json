@@ -6,7 +6,9 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "build": "nest build && cp -r agent-twitter-client dist/agent-twitter-client && cd dist/agent-twitter-client && npm install",
+    "build": "nest build && npm run build-agent-twitter-client && npm install && npm run copy-data",
+    "build-agent-twitter-client": "cp -r agent-twitter-client dist/agent-twitter-client && cd dist/agent-twitter-client && npm install && cd ../../",
+    "copy-data": "cp -r data dist/data",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
