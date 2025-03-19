@@ -98,6 +98,19 @@ export class TwitterService implements OnApplicationBootstrap {
     @InjectRepository(BotRepository)
     private readonly botRepository: BotRepository,
   ) {}
+
+  private truncateContent(content: string, maxLength: number = 280): string {
+    if (!content) {
+      return '';
+    }
+
+    if (content.length <= maxLength) {
+      return content;
+    }
+
+    return content.substring(0, maxLength - 3) + '...';
+  }
+
   async onApplicationBootstrap() {
     // this.handleTwitterInteractions();
     // this.aiService
@@ -151,6 +164,7 @@ export class TwitterService implements OnApplicationBootstrap {
     if (!scraper) {
       throw new Error('Scraper not found');
     }
+
     try {
       const rs = await scraper.sendLongTweet(
         content,
@@ -165,7 +179,12 @@ export class TwitterService implements OnApplicationBootstrap {
       return json;
     } catch (error) {
       console.log(' Retry send tweet...');
-      const rs = await scraper.sendTweet(content, replyToTweetId, mediaData);
+      const truncatedContent = this.truncateContent(content);
+      const rs = await scraper.sendTweet(
+        truncatedContent,
+        replyToTweetId,
+        mediaData,
+      );
       const json = await rs.json();
 
       if (json.errors) {
@@ -543,7 +562,8 @@ export class TwitterService implements OnApplicationBootstrap {
           threadHistoryBuild,
         );
         updated['reply_content'] = response;
-        const rs = await this.post(response, replyId);
+        // Gửi tweet và bỏ qua kết quả trả về vì không cần sử dụng
+        await this.post(response, replyId);
       }
 
       await this.twitterPostRepository.update(post.id, updated);
