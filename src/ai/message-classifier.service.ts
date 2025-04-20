@@ -12,7 +12,7 @@ export class MessageClassifierService implements OnApplicationBootstrap {
   constructor() {
     this.openAIKey = process.env.OPEN_AI_API_KEY;
     this.model = new ChatOpenAI({
-      modelName: 'gpt-4',
+      modelName: 'gpt-4o',
       temperature: 0,
       apiKey: this.openAIKey,
     });
