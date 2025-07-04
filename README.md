@@ -1,73 +1,87 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# AIIA Agent Server
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+A scalable server application built with NestJS for AI-powered agents capable of interacting across multiple platforms including Twitter and Discord.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Overview
 
-## Description
+AIIA Agent Server serves as a backend for AI agents that can process natural language, retrieve information from vector databases, and engage with users through various platforms. Built with NestJS, this application offers a robust architecture for managing AI agents, user interactions, and multi-platform integrations.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Key Features
 
-## Installation
+- **AI Agent Framework**: Configurable AI agents with customizable instructions and tools
+- **Multi-Platform Support**: Integration with Twitter and Discord
+- **Vector Database**: PgVector implementation for semantic search and document retrieval
+- **Authentication**: Secure API endpoints with JWT authentication
+- **Scalable Architecture**: Built on NestJS for enterprise-grade scalability
 
-```bash
-$ npm install
-```
+## Technical Stack
 
-## Running the app
+- **Framework**: NestJS (Node.js)
+- **Database**: PostgreSQL with PgVector extension
+- **Authentication**: JWT
+- **Containerization**: Docker
+- **CI/CD**: GitHub Actions integration with Railway deployment
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (14+)
+- PostgreSQL with PgVector extension
+- Docker and Docker Compose (optional)
+
+### Installation
 
 ```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+# Install dependencies
+$ pnpm install
 ```
 
-## Test
+### Configuration
+
+Configure environment variables in a `.env` file:
+
+```
+DATABASE_URL=postgresql://user:password@localhost:5432/aiia
+JWT_SECRET=your_jwt_secret
+# Add other configuration variables as needed
+```
+
+### Running the Application
 
 ```bash
-# unit tests
-$ npm run test
+# Development
+$ pnpm run start:dev
 
-# e2e tests
-$ npm run test:e2e
+# Production
+$ pnpm run start:prod
 
-# test coverage
-$ npm run test:cov
+# Using Docker
+$ docker-compose up -d
 ```
 
-## Support
+### Deployment
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+The project includes scripts for deploying to Railway:
 
-## Stay in touch
+```bash
+# Setup Railway project
+$ ./01-setup-railway.sh
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+# Set Railway environment variables
+$ ./02-set-railway-vars.sh
+
+# Setup GitHub Actions for CI/CD
+$ ./03-setup-github-actions.sh
+
+# Complete setup
+$ ./04-setup-railway-all.sh
+```
+
+## API Documentation
+
+When the application is running, API documentation is available at `/api/docs`.
 
 ## License
 
-Nest is [MIT licensed](LICENSE).
+[MIT](LICENSE)
